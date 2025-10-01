@@ -2,3 +2,4 @@ pandas
 pdfminer.six
 pypdf
 tqdm
+nltk
