@@ -15,6 +15,8 @@ pyinstaller --onefile --name contar_palabras_pdf contar_palabras_pdf.py
 --substrings → cuenta subcadenas (ej. “plan” dentro de “planificación”).
 --keep-accents → no normaliza acentos.
 --recursive → busca PDFs en subcarpetas.
+-- La búsqueda de palabra completa ahora también considera raíces flexionadas
+   (stemming) para encontrar términos relacionados morfológicamente.
 
 
 # EJEMLPLOS USO ESPAÑOL

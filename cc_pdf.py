@@ -3,13 +3,18 @@ import csv
 import re
 import sys
 from pathlib import Path
-from typing import List, Dict
+from typing import Dict, List, Optional
 import unicodedata
 import pandas as pd
 
 # --- Librerías para GUI (Graphic User Interface) ---
 import tkinter as tk
-from tkinter import ttk, filedialog, messagebox
+from tkinter import filedialog, messagebox, ttk
+
+try:
+    from nltk.stem.snowball import SnowballStemmer  # type: ignore
+except Exception:  # pragma: no cover - dependencia opcional
+    SnowballStemmer = None
 
 
 # ----------------- Utilidades -----------------
@@ -90,6 +95,9 @@ def pick_pdf_backend(): #Algunos archivos han dado error... intentamos leer con 
 # Crea y devuelve un objeto de expresión regular
 #Mejoras para tener resultados más óptimos y según opción de palabra/frase completa (whole word).
 
+WORD_RE = re.compile(r"\w+", flags=re.UNICODE)
+
+
 def compile_pattern(token: str, whole_word: bool) -> re.Pattern:
     escaped = re.escape(token) # Convierte el token en una versión “literal” para regex (regular expresion).
     if whole_word:
@@ -115,9 +123,79 @@ def compile_pattern(token: str, whole_word: bool) -> re.Pattern:
         
     return re.compile(pattern, flags=re.UNICODE)
 
+
+def _token_is_single_word(token: str) -> bool:
+    """Devuelve True si el token es una sola palabra sin espacios ni separadores."""
+
+    return bool(token) and not re.search(r"[\s/-]", token)
+
+
+def _token_prefix(token: str) -> str:
+    """Pequeño prefijo usado para reducir falsos positivos en stemming."""
+
+    if len(token) <= 4:
+        return token
+    return token[:4]
+
+
+def pick_stemmer(words: List[str]) -> Optional["SnowballStemmer"]:
+    """Selecciona dinámicamente un stemmer acorde al idioma detectado."""
+
+    if not words or SnowballStemmer is None:
+        return None
+
+    has_spanish_chars = any(re.search(r"[áéíóúñÁÉÍÓÚÑ]", w) for w in words)
+    preferred = ("spanish", "english") if has_spanish_chars else ("english", "spanish")
+
+    for lang in preferred:
+        try:
+            return SnowballStemmer(lang)
+        except Exception:
+            continue
+    return None
+
+
+def count_occurrences_with_stemming(text: str, tokens: List[str], stemmer: "SnowballStemmer") -> Dict[str, int]:
+    """Cuenta ocurrencias agrupando por raíz (stemming) para tokens simples."""
+
+    if not tokens:
+        return {}
+
+    stem_to_tokens: Dict[str, List[str]] = {}
+    prefixes: Dict[str, str] = {}
+    for token in tokens:
+        stem = stemmer.stem(token)
+        stem_to_tokens.setdefault(stem, []).append(token)
+        prefixes[token] = _token_prefix(token)
+
+    results = {token: 0 for token in tokens}
+
+    for word in WORD_RE.findall(text):
+        if not word:
+            continue
+        stem = stemmer.stem(word)
+        token_list = stem_to_tokens.get(stem)
+        if not token_list:
+            continue
+        for token in token_list:
+            prefix = prefixes[token]
+            if prefix and not word.startswith(prefix):
+                continue
+            results[token] += 1
+
+    return results
+
+
 #Aquí sumamos los token que vamos encontrando... y devolvemos un dúo (dictionario) palabra (str), conteo (int)
-def count_occurrences(text: str, patterns: Dict[str, re.Pattern]) -> Dict[str, int]:
+def count_occurrences(text: str,
+                      patterns: Dict[str, re.Pattern],
+                      tokens_with_stem: List[str],
+                      stemmer: Optional["SnowballStemmer"]) -> Dict[str, int]:
     results: Dict[str, int] = {}
+
+    stem_counts: Dict[str, int] = {}
+    if stemmer is not None and tokens_with_stem:
+        stem_counts = count_occurrences_with_stemming(text, tokens_with_stem, stemmer)
 
     for token, pat in patterns.items():
         # Coincidencias detectadas en el texto
@@ -126,8 +204,16 @@ def count_occurrences(text: str, patterns: Dict[str, re.Pattern]) -> Dict[str, i
         # Cuenta coincidencias (tamaño de la lista)
         count = len(matches)
 
+        if token in stem_counts:
+            count = max(count, stem_counts[token])
+
         # Guarda el resultado asociado a ese token
         results[token] = count
+
+    # Los tokens sólo manejados por stemming (sin patrón) también deben devolverse
+    for token in tokens_with_stem:
+        if token not in results and stem_counts:
+            results[token] = stem_counts.get(token, 0)
 
     return results
 
@@ -317,6 +403,11 @@ class App(tk.Tk):
 
         norm_tokens_unique = list(norm_tokens_set) #Paso a lista (ordenado y permite duplicados... aunque no los tendrá)
 
+        stemmer = pick_stemmer(original_words) if whole_word else None
+        tokens_with_stem = []
+        if stemmer is not None:
+            tokens_with_stem = [nw for nw in norm_tokens_unique if _token_is_single_word(nw)]
+
         patterns = {nw: compile_pattern(nw, whole_word) for nw in norm_tokens_unique}
 
         if recursive:
@@ -351,7 +442,12 @@ class App(tk.Tk):
                     text = ""  # si falla un archivo, continúa
 
                 norm_text = normalize_text(text, remove_accents)
-                per_token_counts = count_occurrences(norm_text, patterns)
+                per_token_counts = count_occurrences(
+                    norm_text,
+                    patterns,
+                    tokens_with_stem,
+                    stemmer if whole_word else None,
+                )
                 total_words = len(norm_text.split())
                 per_token_counts["__TOTAL_PALABRAS__"] = total_words
                 counts_per_pdf[pdf_path.name] = per_token_counts
