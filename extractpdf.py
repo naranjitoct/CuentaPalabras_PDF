@@ -1,6 +1,5 @@
 # ============================================
 #   EXTRACTOR DE PALABRAS CLAVE DESDE PDF
-#   INTERFAZ GRÁFICA CON TKINTER
 # ============================================
 
 import os
