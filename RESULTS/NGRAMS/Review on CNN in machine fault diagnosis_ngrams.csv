@@ -1,0 +1,837 @@
+ngram,freq
+fault diagnosis,257
+neural network,122
+convolutional neural,98
+convolutional neural network,96
+bear fault,81
+convolutional network,79
+bear fault diagnosis,60
+vibration signal,48
+network base,34
+deep convolutional,32
+deep learning,30
+rotate machinery,24
+operating condition,22
+remain useful,21
+remain useful life,20
+useful life,20
+feature learning,19
+vibration datum,19
+deep convolutional neural,18
+diagnosis use,16
+transfer learn,16
+ieee access,15
+fault diagnosis use,15
+neural network base,14
+result show,14
+lstm network,13
+base deep,13
+time frequency,12
+real time,12
+feature learn,12
+condition monitoring,12
+transfer learning,12
+base fault,11
+method base,11
+train cnn,11
+learning rate,11
+feature extraction,11
+deep cnn,11
+model base,10
+fault diagnosis base,10
+diagnosis base,10
+frequency domain,9
+gear fault,9
+learning base,9
+fault detection,9
+use convolutional,8
+convolutional layer,8
+wavelet transform,8
+network base fault,8
+time series,8
+big datum,8
+diagnostic model,8
+use train,8
+learning model,7
+connect layer,7
+sensor datum,7
+working condition,7
+train model,7
+datum matrix,7
+fully connect,7
+element bear,7
+roll element,7
+raw signal,6
+activation function,6
+short term memory,6
+short term,6
+feature map,6
+worth note,6
+convolution neural network,6
+convolution neural,6
+long short,6
+network model,6
+learn feature,6
+machinery fault diagnosis,6
+learning method,6
+machinery fault,6
+non stationary,6
+auto encoder,6
+use cnn,6
+gradient descent,6
+term memory,6
+long short term,6
+input output,6
+datum different,6
+datum collection,6
+fully connect layer,6
+signal processing,6
+time frequency domain,6
+deep learning base,6
+data drive,6
+linear unit,5
+list table,5
+model use,5
+gate recurrent,5
+gate recurrent unit,5
+dataset description,5
+element bearing,5
+recurrent unit,5
+loss function,5
+use dataset,5
+decision making,5
+belief network,5
+propose cnn,5
+datum test,4
+input datum,4
+deep belief network,4
+training datum,4
+time fouri,4
+experimental datum,4
+show table,4
+inner race,4
+fouri transform,4
+test datum,4
+training set,4
+mechanical equipment,4
+deep learning model,4
+network remain,4
+rolling bear,4
+rolling element,4
+deep belief,4
+develop deep,4
+label datum,4
+multi channel,4
+condition ieee,4
+vision pattern,4
+extract feature,4
+high speed,4
+use datum,4
+race fault,4
+cnn learn,4
+outer race,4
+machine learning,4
+university china,4
+machine condition,3
+diagnosis rolling,3
+empirical mode,3
+mode decomposition,3
+feature extractor,3
+mechanical fault,3
+datum generate,3
+deep learning method,3
+datum train,3
+feature extract,3
+deep neural network,3
+time fouri transform,3
+diagnosis datum,3
+signal time,3
+signal use,3
+feature image,3
+datum test datum,3
+datum model,3
+fault severity,3
+design process,3
+deep neural,3
+covariance matrix,3
+datum feature,3
+image use,3
+learning framework,3
+use fault,3
+chen shen,3
+use hierarchical,3
+network also,3
+use input,3
+use model,3
+datum distribution,3
+use multi,3
+network cnn,3
+beijing china,3
+image datum,3
+rolling element bearing,3
+use convolutional network,3
+rolling bear fault,3
+value decomposition,3
+also use,3
+wang propose,3
+wang zhang,3
+reference architecture,3
+well performance,3
+address issue,3
+layer convolutional,3
+widely use,3
+number parameter,3
+label sample,3
+cnn model,3
+empirical mode decomposition,3
+data distribution,3
+condition use,3
+frequency khz,3
+grayscale image,3
+pay attention,3
+performance degradation,3
+convolutional neuralnetwork,3
+expert knowledge,2
+input cnn,2
+inner race fault,2
+short time fouri,2
+hilbert huang,2
+ing condition,2
+roll element bearing,2
+feature time,2
+low frequency,2
+extreme learning,2
+learn algorithm,2
+extraction fault,2
+generate datum,2
+reduce number,2
+recent year,2
+review application,2
+machine learn,2
+example show,2
+raw datum,2
+machine learning model,2
+even impossible,2
+future research,2
+frequency response,2
+frequency representation,2
+reserve university,2
+short time,2
+random forest,2
+hilbert huang transform,2
+image representation,2
+feature different,2
+feature extraction fault,2
+high quality datum,2
+high quality,2
+singular value,2
+select datum,2
+singular value decomposition,2
+huang transform,2
+high dimensional,2
+reduce feature,2
+help reader,2
+sensor different,2
+learn rate,2
+series datum,2
+guo chen,2
+simple example,2
+learn method,2
+support vector,2
+feature representation,2
+image feature,2
+run failure,2
+image fusion,2
+image input,2
+image pixel,2
+image processing,2
+fault condition,2
+rule thumb,2
+sample size,2
+object datum,2
+support vector machine,2
+datum analysis,2
+black box,2
+use label,2
+case western,2
+case western reserve,2
+use feature,2
+use experimental,2
+column list,2
+column represent,2
+use continuous,2
+comprehensive review,2
+use collect,2
+outer race fault,2
+university beijing china,2
+university beijing,2
+construct feature,2
+construct use,2
+paper organize,2
+paper organize follow,2
+contain one,2
+currently work,2
+model train,2
+quality datum,2
+two type,2
+pattern recognition,2
+two domain,2
+two direction,2
+dataset use,2
+use non,2
+network construct,2
+bear vibration,2
+network use,2
+accurate prediction,2
+adaptive deep,2
+western reserve university,2
+western reserve,2
+algorithm develop,2
+non linear,2
+vibration signal use,2
+vibration image,2
+amount datum,2
+vector machine,2
+neural network cnn,2
+analysis process,2
+use wavelet,2
+batch gradient descent,2
+operation parameter,2
+use train model,2
+use time frequency,2
+use time,2
+use study,2
+order statistic,2
+organize follow,2
+base fault detection,2
+base feature,2
+base image,2
+use reduce,2
+batch gradient,2
+datum acquisition,2
+type dataset,2
+large number,2
+diagnosis rolling element,2
+train test,2
+prediction accuracy,2
+train large,2
+datum real,2
+train fault,2
+datum set,2
+train deep,2
+different condition,2
+term memory lstm,2
+memory lstm,2
+training datum test,2
+datum three,2
+process feature,2
+method introduce,2
+datum type,2
+process characteristic,2
+datum use,2
+datum use train,2
+time frequency representation,2
+method combine,2
+datum may,2
+deep learn,2
+matrix two,2
+may cause,2
+directly use,2
+display table,2
+system engineering,2
+model design,2
+point estimate,2
+system use,2
+training test,2
+one convolutional,1
+represent different,1
+processing method,1
+obtain use,1
+randall roll,1
+optimization strategy,1
+representation raw,1
+represent average,1
+process input,1
+process datum,1
+randall roll element,1
+problem one,1
+relate data,1
+process input datum,1
+provide valuable,1
+one convolutional layer,1
+one hand,1
+process obtain,1
+real scenario,1
+representation wavelet,1
+recurrent neural network,1
+performance model,1
+performance common,1
+performance prediction,1
+performance thus,1
+pixel image,1
+parameter train,1
+parameter speed,1
+play important,1
+raw datum use,1
+play important role,1
+parameter cnn,1
+recurrent neural,1
+pool layer,1
+practical application,1
+previous section,1
+pre process,1
+rate fault,1
+overview gradient descent,1
+overview gradient,1
+recurrent unit gru,1
+prediction model,1
+reduce data,1
+oscillate even,1
+original training,1
+prediction result,1
+prediction use,1
+real industrial,1
+original datum,1
+range use,1
+accord application,1
+require label,1
+unit network,1
+understand work,1
+understand feature,1
+type work,1
+two step,1
+two layer,1
+two feature,1
+two distribution,1
+two dimensional,1
+ture extraction,1
+transformation datum,1
+transform wavelet transform,1
+transform wavelet,1
+transform use,1
+transform stft,1
+transform datum,1
+transfer learning method,1
+transfer also,1
+training test datum,1
+training process,1
+training neural network,1
+training neural,1
+training method,1
+train model use,1
+traditional neural network,1
+traditional neural,1
+tion use,1
+tion application,1
+time series datum,1
+time frequency image,1
+unit gru,1
+unit relu,1
+rest paper,1
+use case,1
+zhao deep,1
+work would,1
+widely use train,1
+well understand,1
+well datum,1
+weight bias,1
+weight average,1
+vector algorithm,1
+various factor,1
+value run,1
+usually use,1
+usually contain,1
+use unsupervised,1
+use two,1
+use traditional,1
+use statistic,1
+use rolling,1
+use representation,1
+use obtain,1
+use new,1
+use multiple,1
+use improve,1
+use image,1
+use identify,1
+use generate,1
+use gabor,1
+use eliminate,1
+use current,1
+use case western,1
+time frequency analysis,1
+time example,1
+time consume expensive,1
+time consume,1
+signal therefore,1
+signal feed,1
+signal feature,1
+signal example,1
+signal component,1
+sigmoid function,1
+show well,1
+shen hierarchical adaptive,1
+shen hierarchical,1
+set data,1
+sensor datum type,1
+sensor complexity,1
+selection feature,1
+select well,1
+select use,1
+select appropriate,1
+section summary,1
+section datum,1
+scheme use,1
+sample rate,1
+rotation speed,1
+rolling element bear,1
+right reserve,1
+result use,1
+result many,1
+result also,1
+restrict boltzmann machine,1
+restrict boltzmann,1
+rest paper organize,1
+signal wang,1
+similar feature,1
+simple way,1
+study use,1
+three layer,1
+test use,1
+test set,1
+term memory neural,1
+temporal datum,1
+temperature set,1
+technique use,1
+task datum,1
+target datum,1
+take one,1
+take account,1
+table show,1
+system datum,1
+still open,1
+since take,1
+step show,1
+state use,1
+start end,1
+stack convolutional,1
+speed training,1
+source datum,1
+obtain feature,1
+smith randall roll,1
+smith randall,1
+small batch,1
+slavkovikj vervisch,1
+size dataset,1
+single variable,1
+solve problem,1
+learning therefore,1
+obtain accurate,1
+datum instance,1
+datum generation,1
+datum hardware,1
+datum help,1
+datum image,1
+datum improve,1
+datum include,1
+datum industrial,1
+datum know,1
+datum store,1
+datum labelling,1
+datum method,1
+datum often,1
+datum preprocesse,1
+datum processing,1
+datum quantity,1
+datum sample,1
+datum format,1
+datum extract,1
+datum describe,1
+datum datum,1
+cycle datum,1
+data analysis,1
+data collection,1
+data datum,1
+data generation,1
+data set,1
+data similarity,1
+data size,1
+data type,1
+database share,1
+dataset name,1
+datum collect,1
+datum come,1
+datum common,1
+datum data,1
+datum since,1
+datum summary,1
+contain two,1
+directly image,1
+different approach,1
+different location,1
+different observation,1
+different scale,1
+different type,1
+direct strategy,1
+directly apply,1
+domain knowledge,1
+datum therefore,1
+due various,1
+due various factor,1
+easy understand,1
+effective method,1
+enable fault,1
+enable fault diagnosis,1
+enable feature,1
+diagnosis use time,1
+diagnosis review,1
+diagnosis methodology,1
+diagnosis label,1
+datum time,1
+datum train model,1
+datum update,1
+datum usually,1
+decision make,1
+deep learning enable,1
+deep learning framework,1
+deep learning nature,1
+deep model,1
+descent bgd,1
+descent mbgd,1
+descent sgd,1
+design model,1
+detection rotate,1
+detection rotate machinery,1
+current work,1
+contain multiple,1
+number sample,1
+approach develop,1
+among different,1
+anal ysis,1
+analysis addition,1
+analysis also,1
+another popular,1
+another type,1
+application addition,1
+approach use,1
+back propagation,1
+author declare,1
+automatic feature,1
+automatic feature extraction,1
+automatically learn,1
+avci kiranyaz,1
+average value,1
+babu zhao,1
+also maintain,1
+also embed,1
+also consider,1
+also call,1
+achieve certain,1
+achieve excellent,1
+achieve fast,1
+acquisition system,1
+adam method,1
+adam method stochastic,1
+add multi,1
+addition original,1
+address problem,1
+adjust weight,1
+algorithm obtain,1
+algorithm propose,1
+algorithm two,1
+algorithm work,1
+allow user,1
+babu zhao deep,1
+ball bearing,1
+consume expensive,1
+comparison table,1
+cluster machine,1
+cnn cnn,1
+cnn two,1
+collect prepare,1
+column show,1
+come different,1
+common feature,1
+computational complexity,1
+ball fault,1
+computer science,1
+computer vision,1
+computer vision pattern,1
+condition monitoring fault,1
+condition therefore,1
+conference datum,1
+connect local,1
+cloud platform,1
+choose good,1
+chen shen hierarchical,1
+chart display,1
+base deep neural,1
+base element,1
+base sensor,1
+bear vibration signal,1
+become increasingly,1
+benchmark study,1
+bengio hinton,1
+bengio hinton deep,1
+boltzmann machine,1
+build model,1
+build model use,1
+build new,1
+capability model,1
+case study,1
+certain distance,1
+ensure consistency,1
+especially important,1
+etc base,1
+maximum value,1
+load high,1
+low cost,1
+main idea,1
+maintain performance,1
+many different,1
+many variant,1
+massive datum,1
+mean absolute,1
+method propose,1
+measurement zhang,1
+mechanical fault diagnosis,1
+mechanical system,1
+memory neural,1
+method adopt,1
+method another,1
+method extract,1
+life cycle datum,1
+life cycle,1
+level performance,1
+less useful,1
+last two,1
+layer feature,1
+layer front,1
+layer set,1
+layout datum,1
+learn use,1
+learning enable,1
+learning enable fault,1
+learning may,1
+learning nature,1
+accuracy compare,1
+learning use,1
+learning work,1
+lecun bengio,1
+lecun bengio hinton,1
+method extract feature,1
+method stochastic,1
+example fault,1
+network combine,1
+model without,1
+modeling method,1
+monitoring fault,1
+morlet wavelet,1
+multi mode,1
+multi stage,1
+multiple layer,1
+network data,1
+method term,1
+network however,1
+network learning,1
+network shock,1
+neural network also,1
+neural network shock,1
+new training,1
+number case,1
+model usually,1
+model training,1
+model requirement,1
+model prediction,1
+method time,1
+method use,1
+might want,1
+mini batch,1
+mini batch gradient,1
+model also,1
+model another,1
+model apply,1
+model construct,1
+model could,1
+model however,1
+model include,1
+model may,1
+model parameter,1
+model performance,1
+last least,1
+large size,1
+large scale,1
+generate datum real,1
+fouri transform stft,1
+frequency analysis,1
+frequency image,1
+frequency image analysis,1
+function due,1
+function well,1
+gaussian kernel,1
+generate image,1
+large one,1
+generate image representation,1
+generate new,1
+gradient descent bgd,1
+gradient descent mbgd,1
+gru network,1
+guo chen shen,1
+guo gao,1
+format model,1
+follow step,1
+feature vibration,1
+feature use,1
+example mathematical,1
+example method,1
+excellent result,1
+experimental result,1
+extraction base,1
+extraction selection,1
+failure task,1
+fast convergence,1
+fault detection rotate,1
+fault diagnosis methodology,1
+fault diagnosis review,1
+feature base,1
+feature dimension,1
+feature input,1
+feature learning therefore,1
+health assessment,1
+health datum,1
+hierarchical adaptive,1
+include datum,1
+industrial application,1
+information property,1
+inner outer,1
+input deep,1
+intelligent manufacturing,1
+interest author,1
+interest author declare,1
+issue data,1
+janssens slavkovikj,1
+janssens slavkovikj vervisch,1
+kingma adam,1
+kingma adam method,1
+knowledge feature,1
+label instance,1
+large amount,1
+include image,1
+improved performance,1
+hierarchical adaptive deep,1
+important role,1
+high accuracy,1
+high low,1
+hinton deep,1
+hinton deep learning,1
+however large,1
+however usually,1
+hyper parameter,1
+image analysis,1
+image apply,1
+image base,1
+image data,1
+image feature extraction,1
+image recognition,1
+image representation raw,1
+image use train,1
+zhao deep convolutional,1
